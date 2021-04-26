@@ -12,37 +12,37 @@ code {
     monospace;
 }
 
-.Column1,
-.Column2,
-.Column3,
-.Column4,
-.Column5 {
+.ColumnFunc,
+.ColumnDate,
+.ColumnPhone,
+.ColumnStatus,
+.ColumnTags {
     font-size: 15px;
 }
 
-.Column1 {
+.ColumnFunc {
     font-weight: bold;
     min-width: 75px;
 }
-.Column2 {
+.ColumnDate {
     min-width: 150px;
 }
 
-.Column3 {
+.ColumnPhone {
     min-width: 140px;
 }
 
-.Column1 div,
-.Column3 div,
-.Column5 div:nth-child(1),
-.Column6 div:nth-child(1) {
+.ColumnFunc div,
+.ColumnPhone div,
+.ColumnTags div:nth-child(1),
+.ColumnTheme div:nth-child(1) {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 15px;
 }
 
-.Column1 span,
-.Column3 span {
+.ColumnFunc span,
+.ColumnPhone span {
     display: flex;
     align-content: center;
     transform: rotate(-45deg);
@@ -51,22 +51,22 @@ code {
     border: 1px solid #dbcece;
 }
 
-.Column2 div:nth-child(2n-1),
-.Column3 div:nth-child(2n-1),
-.Column4 div:nth-child(2n-1) {
+.ColumnDate div:nth-child(2n-1),
+.ColumnPhone div:nth-child(2n-1),
+.ColumnStatus div:nth-child(2n-1) {
     font-weight: bold;
 }
 
-.Column2 div,
-.Column3 div,
-.Column4 div,
-.Column5 div:nth-child(1),
-.Column6 div:nth-child(1) {
+.ColumnDate div,
+.ColumnPhone div,
+.ColumnStatus div,
+.ColumnTags div:nth-child(1),
+.ColumnTheme div:nth-child(1) {
     margin-bottom: 5px;
 }
 
-.Column5,
-.Column6 {
+.ColumnTags,
+.ColumnTheme {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,8 +75,8 @@ code {
     min-width: 100px;
 }
 
-.Column5 div:nth-child(n+2),
-.Column6 div:nth-child(n+2) {
+.ColumnTags div:nth-child(n+2),
+.ColumnTheme div:nth-child(n+2) {
     background: #bfc9d5;
     border-radius: 6px;
     border: 1px solid #bebebe;
@@ -85,7 +85,7 @@ code {
     padding: 2px;
 }
 
-.Column5 span {
+.ColumnTags span {
     display: flex;
     align-items: center;
     margin-left: 5px;
