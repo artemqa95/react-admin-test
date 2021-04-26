@@ -1,13 +1,107 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Column1,
+.Column2,
+.Column3,
+.Column4,
+.Column5 {
+    font-size: 15px;
+}
+
+.Column1 {
+    font-weight: bold;
+    min-width: 75px;
+}
+.Column2 {
+    min-width: 150px;
+}
+
+.Column3 {
+    min-width: 140px;
+}
+
+.Column1 div,
+.Column3 div,
+.Column5 div:nth-child(1),
+.Column6 div:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.Column1 span,
+.Column3 span {
+    display: flex;
+    align-content: center;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 1px solid #dbcece;
+}
+
+.Column2 div:nth-child(2n-1),
+.Column3 div:nth-child(2n-1),
+.Column4 div:nth-child(2n-1) {
+    font-weight: bold;
+}
+
+.Column2 div,
+.Column3 div,
+.Column4 div,
+.Column5 div:nth-child(1),
+.Column6 div:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+.Column5,
+.Column6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 106px;
+    padding-top: 0;
+    min-width: 100px;
+}
+
+.Column5 div:nth-child(n+2),
+.Column6 div:nth-child(n+2) {
+    background: #bfc9d5;
+    border-radius: 6px;
+    border: 1px solid #bebebe;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.Column5 span {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.addMark {
+    display: flex;
+    flex-direction: column;
+    background: #ffbd04;
+}
+
+.addMark button {
+    background: #d0d2db;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+

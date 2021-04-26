@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import {Admin, Resource} from 'react-admin';
+import {Calls, CallsCreate} from './components/Calls/Calls';
+import restProvider from 'ra-data-simple-rest';
+import UserIcon from '@material-ui/icons/Group';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const dataProvider = restProvider('http://localhost:5000');
+
+const App = () => {
+    return (
+        <Admin dataProvider={dataProvider} title={'Calls'}>
+            <Resource name="calls" list={Calls} create={CallsCreate} icon={UserIcon}/>
+        </Admin>
+    )
 }
 
 export default App;
